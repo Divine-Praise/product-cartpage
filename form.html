@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-div">
+        <form action="index_pro.php" method ="POST">
+            <h2>Product Form</h2>
+            <div class="in">
+                <label for="productimg">Product Image</label><br>
+                <input type="file" name="productimg" id="productimg" required><br>
+            </div>
+    
+            <div>
+                <label for="productname">Product Name</label><br>
+                <input type="text" name="productname" id="productname" required><br>
+            </div>
+
+           <div>
+                <label for="productprice">Product Price</label><br>
+                <input type="number" name="productprice" id="productprice" required><br>
+           </div>
+    
+            <center><input type="submit" name="submit" id="submit" value="SUBMIT"></center>
+        </form>
+    </div>
+</body>
+</html>

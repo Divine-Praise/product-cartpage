@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-p{
+    background-color: #171427;
+    color: #fd4646;
+    padding-block: 0.6rem;
+    padding-inline: 1.3rem;
+}
+#p{
+    font-size: 3rem;
+}
+
+/* styling product begins=================== */
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(245px, auto));
+    gap: 1.5rem;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 2%;
+}
+.cloth-product{
+    position: relative;
+    /* border: 1px solid lightgray; */
+}
+.cloth-product:hover{
+    padding: 10px;
+    border: 1px solid  #171427;
+    transition: .4s;
+}
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    /* text-align: center; */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.price{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.add-cart{
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    bottom: 0;
+    right: 0;
+    background: #fd4646;
+    color:  #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+#img{
+    width: 100%;
+    background-color: lightgray;
+}
+.add-cart:hover{
+    background: hsl(249,32%,17%);
+}
+/* styling product ends================= */
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+form{
+    /* border: 1px solid; */
+    width: 350px;
+    height: 22rem;
+    padding-inline: 10px;
+    box-shadow: 4px 4px 30px 0px rgb(149, 147, 147);
+    /* border-radius: 7px; */
+}
+
+form h2{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+    color: #1b1829;
+}
+
+.in{
+    margin-top: 60px;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-top: 50px;
+    color: #1b1829;
+}
+
+form input{
+    margin-block: 5px;
+    width: 100%;
+    padding-block: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: #1b1829;
+    font-size: 0.9rem;
+    padding-inline: 5px;
+    outline: none;
+}
+input[type = submit]{
+    background-color: #fd4646;
+    color: #171427;
+    width: 90%;
+    /* margin-top: 10px; */
+    cursor: pointer;
+}
+
+
+
+nav{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1.3rem;
+    box-shadow: 0px 0px 6px 0px grey;
+}
+
+nav .logo h2{
+    font-weight: 400;
+}
+
+nav  ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #171427;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #171427;
+    position: relative;
+    font-weight: 400;
+}
+
+nav ul li a.active::before{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 3px;
+    width: 100%;
+    background-color: #fd4646;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav ul li a.active:hover:before{
+    width: 100%;
+}
